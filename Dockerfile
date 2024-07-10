@@ -18,12 +18,17 @@ RUN apt-get update && apt-get upgrade -y
     gcc \
     gfortran \
     make \
-    pip3 \
-    mesa-utils
-
+    python3-pip \
+    mesa-utils \
+    # avoids figurecanvasagg is non-interactive and thus cannot be shown devcontainer 
+    python3-tk \        
 #--------------------------------------------------
 # python build tools & base dependencies
 #--------------------------------------------------
 RUN pip3 install \
     simwave \
-    numpy 
+    numpy \
+    torch \
+    torchvision \
+    validators \
+    scikit-image
