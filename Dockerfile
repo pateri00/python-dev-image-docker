@@ -31,4 +31,5 @@ RUN pip3 install \
     torch \
     torchvision \
     validators \
-    scikit-image
+    scikit-image \
+    scikit-learn
