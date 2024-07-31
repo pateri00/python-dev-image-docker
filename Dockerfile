@@ -25,14 +25,10 @@ RUN apt-get update && apt-get upgrade -y
     make \
     python3-pip \
     mesa-utils \
-    python3-tk
+    python3-tk \
     # avoids figurecanvasagg is non-interactive and thus cannot be shown devcontainer 
-
-    # Install deep-mean-shifts
-# RUN mkdir /root/novelty-detection/ && cd /root/novelty-detection/ && git clone https://github.com/matherm/deep-mean-shift.git
-# RUN ls && sleep 10
-# # RUN pip3 install -f /root/workspace/requirements.txt
-# RUN python3 /root/novely-detection/deep-mean-shift/setup.py install
+    texlive-xetex
+    
 #--------------------------------------------------
 # python build tools & base dependencies
 #--------------------------------------------------
