@@ -27,7 +27,8 @@ RUN apt-get update && apt-get upgrade -y
     mesa-utils \
     python3-tk \
     # avoids figurecanvasagg is non-interactive and thus cannot be shown devcontainer 
-    texlive-xetex
+    texlive-xetex \
+    libglib2.0-0
     
 #--------------------------------------------------
 # python build tools & base dependencies
@@ -40,6 +41,7 @@ RUN pip3 install \
     validators \
     scikit-image \
     scikit-learn \
-    tensorflow
+    tensorflow \
+    opencv-python
 
 
